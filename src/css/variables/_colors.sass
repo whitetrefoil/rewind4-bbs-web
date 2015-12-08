@@ -1,0 +1,23 @@
+@charset "UTF-8"
+
+// The original ones
+//
+//$BLUE                 : hsl(202, 100%, 73%)
+//$BLUE_LIGHT           : hsl(202, 95%, 83%)
+//$BLUE_LIGHTER         : hsl(201, 88%, 93%)
+//$BLUE_LIGHTEST        : hsl(200, 78%, 96%)
+//
+//$YELLOW               : hsl(37, 95%, 83%)
+//$YELLOW_DARK          : hsl(37, 100%, 43%)
+
+$BLUE                 : hsl(205, 100%, 75%)
+$BLUE_LIGHT           : desaturate(lighten($BLUE, 10%), 5%)
+$BLUE_LIGHTER         : desaturate(lighten($BLUE, 20%), 10%)
+$BLUE_LIGHTEST        : desaturate(lighten($BLUE, 25%), 20%)
+
+$PRIMARY              : $BLUE
+$PRIMARY_LIGHT        : $BLUE_LIGHT
+$PRIMARY_LIGHTER      : $BLUE_LIGHTER
+$PRIMARY_LIGHTEST     : $BLUE_LIGHTEST
+
+$WHITE                : hsl(hue($PRIMARY), 100%, 99%)
